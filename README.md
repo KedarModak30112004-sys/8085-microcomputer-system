@@ -52,6 +52,7 @@ The system memory map is organized as follows:
 | 8000H – FFFFH | Reserved / Expansion | 32 KB |
 
 Address decoding is implemented using the 74LS138 3-to-8 line decoder.
+Each memory module is enabled using chip-select signals generated from higher-order address lines.
 
 ---
 
