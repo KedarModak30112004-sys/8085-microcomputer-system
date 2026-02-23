@@ -56,6 +56,27 @@ Each memory module is enabled using chip-select signals generated from higher-or
 
 ---
 
+## I/O Devices and Peripherals
+
+The system interfaces several programmable peripheral devices to extend functionality:
+
+- **8255 Programmable Peripheral Interface (PPI)**  
+  Provides three 8-bit parallel ports for interfacing external devices.
+
+- **8253 Programmable Interval Timer (PIT)**  
+  Used for generating precise timing signals and delays.
+
+- **8279 Keyboard/Display Controller**  
+  Handles keyboard input scanning and display output management.
+
+- **74LS373 Address Latch**  
+  Separates the multiplexed lower address/data bus of the 8085.
+
+- **74LS138 Decoder**  
+  Generates chip-select signals for memory and I/O devices.
+
+---
+
 ## Future Enhancements
 
 - Digital schematic recreation (Proteus/KiCad)
