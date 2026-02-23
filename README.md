@@ -39,18 +39,17 @@ All devices communicate via the address, data, and control buses of the 8085.
 
 ## Memory Organization
 
-The 8085 has a 16-bit address bus allowing access to 64 KB of address space (0000H – FFFFH).
+The 8085 has a 16-bit address bus capable of addressing 64 KB of memory (0000H – FFFFH).
 
 The system memory map is organized as follows:
 
 | Address Range | Device | Size |
 |--------------|--------|------|
 | 0000H – 1FFFH | EPROM (2764) | 8 KB |
-| 2000H – 3FFFH | RAM (6264) | 8 KB |
-| 4000H – 40FFH | 8255 PPI | 256 B |
-| 4100H – 41FFH | 8253 PIT | 256 B |
-| 4200H – 42FFH | 8279 KBD/Display | 256 B |
-| Remaining Space | Reserved for expansion | — |
+| 2000H – 3FFFH | RAM Module 1 (6264) | 8 KB |
+| 4000H – 5FFFH | RAM Module 2 (6264) | 8 KB |
+| 6000H – 7FFFH | RAM Module 3 (6264) | 8 KB |
+| 8000H – FFFFH | Reserved / Expansion | 32 KB |
 
 Address decoding is implemented using the 74LS138 3-to-8 line decoder.
 
